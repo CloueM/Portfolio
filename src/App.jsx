@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import React from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
 import './App.css'
 
 function App() {
   return (
     <>
-      <h1>CloueM Portfolio</h1>
+      <Header />
+      <Hero />
     </>
   )
 }

@@ -36,17 +36,26 @@
 
 @media (min-width: 768px) {
    :root {
-      --text-display: 6rem;
+      --text-display: clamp(4rem, 6.5vw, 6.5rem);
       --text-h1: 4rem;
       --text-h2: 3rem;
       --text-h3: 2rem;
       --text-body: 1rem;
       --text-caption: 0.75rem;
 
-      --layout-margin: 7.5rem;
+      --layout-margin: clamp(2rem, 10vw, 13rem);
    }
 }
 
 body {
    font-family: var(--font-primary);
+   margin: 0;
+   padding: 0;
+   background-color: var(--color-dust);
+   color: var(--color-charcoal);
+   box-sizing: border-box;
+}
+
+* {
+   box-sizing: border-box;
 }
