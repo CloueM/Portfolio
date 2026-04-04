@@ -37,7 +37,7 @@ const Hero = () => {
 
                 <div className={`hero-nav-wrapper ${isScrolled ? 'fixed-nav' : ''}`}>
                     <nav className="site-nav">
-                        <div className="nav-pill">
+                        <div className="nav-pill"> 
                             <Link to="/" className="nav-link active">Home</Link>
                             <Link to="/projects" className="nav-link">Projects</Link>
                             <Link to="/about" className="nav-link">About</Link>
