@@ -1,0 +1,33 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import catInMug from '../assets/cat-in-mug.png';
+import '../styles/CoffeeCTA.css';
+
+const CoffeeCTA = () => {
+    return (
+        <section className="coffee-cta-section">
+            <div className="coffee-cta-container">
+                <div className="coffee-cta-image-wrapper">
+                    <img src={catInMug} alt="Cat in a mug decoration" className="coffee-cta-image" />
+                </div>
+                <div className="coffee-cta-content">
+                    <h2 className="coffee-cta-title">Fur Real Though, Coffee's on Me</h2>
+                    <p className="coffee-cta-description">
+                        Thanks for making it this far! There is more to explore so don't stop here.
+                        Check out all my projects, get to know me on the about page, and if a coffee chat
+                        sounds good to you, you know where to find me.
+                    </p>
+                    <Link to="/about" className="coffee-cta-btn">
+                        ABOUT PAGE
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </Link>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default CoffeeCTA;

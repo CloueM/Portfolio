@@ -1,0 +1,97 @@
+.coffee-cta-section {
+    width: 100%;
+    padding: 6rem var(--layout-margin);
+    background-color: var(--color-dust);
+    box-sizing: border-box;
+}
+
+.coffee-cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .coffee-cta-container {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        gap: 6rem;
+    }
+}
+
+.coffee-cta-image-wrapper {
+    flex: 0 0 clamp(200px, 30vw, 400px);
+    display: flex;
+    justify-content: center;
+}
+
+.coffee-cta-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.coffee-cta-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .coffee-cta-content {
+        align-items: flex-start;
+    }
+}
+
+.coffee-cta-title {
+    font-size: var(--text-h2);
+    font-weight: var(--font-weight-h1);
+    color: var(--color-charcoal);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .coffee-cta-title {
+        font-size: var(--text-h1);
+    }
+}
+
+.coffee-cta-description {
+    font-size: var(--text-body);
+    color: var(--color-charcoal);
+    opacity: 0.8;
+    line-height: 1.6;
+    margin: 0 0 2.5rem 0;
+}
+
+.coffee-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.25rem;
+    background-color: var(--color-off-white);
+    color: var(--color-charcoal);
+    text-decoration: none;
+    border-radius: 9999px;
+    font-size: var(--text-body);
+    font-weight: var(--font-weight-h3);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.coffee-cta-btn:hover {
+    background-color: #fff;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-cta-btn:active {
+    transform: translateY(0) scale(0.98);
+}
