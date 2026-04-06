@@ -120,7 +120,7 @@
     font-weight: var(--font-weight-h1);
     margin: 0;
     text-transform: uppercase;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease;
 }
 
@@ -145,7 +145,6 @@
 .overlay-content {
     display: flex;
     flex-direction: column;
-    padding-left: 50%;
     transform: translateY(20px);
     transition: transform 0.4s ease;
 }
@@ -193,7 +192,7 @@
 
 
 .project-card .project-title-layer {
-    z-index: 30; 
+    z-index: 30;
 }
 
 /* Mobile Hand Icon */
@@ -211,7 +210,7 @@
     justify-content: center;
     z-index: 40;
     pointer-events: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     opacity: 1;
     transition: opacity 0.3s ease;
 }
