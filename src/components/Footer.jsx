@@ -1,0 +1,43 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/favicon.svg';
+import '../styles/Footer.css';
+
+const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
+    return (
+        <footer className="site-footer">
+            <div className="footer-container">
+                <div className="footer-top">
+                    <div className="footer-brand">
+                        <img src={logo} alt="Logo" className="footer-logo" />
+                    </div>
+                    <nav className="footer-nav">
+                        <div className="footer-nav-group">
+                            <h3 className="footer-label">Sitemap</h3>
+                            <Link to="/" className="footer-link">Home</Link>
+                            <Link to="/about" className="footer-link">About</Link>
+                            <Link to="/projects" className="footer-link">Projects</Link>
+                        </div>
+                        <div className="footer-nav-group">
+                            <h3 className="footer-label">Connect</h3>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="footer-link">GitHub</a>
+                        </div>
+                    </nav>
+                </div>
+                <div className="footer-bottom">
+                    <p className="copyright">
+                        © {currentYear} CLOUE MAC. ALL RIGHTS RESERVED.
+                    </p>
+                    <div className="footer-tagline">
+                        THANK YOU FOR VISITING
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

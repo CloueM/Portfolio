@@ -18,7 +18,6 @@
     align-items: center;
 }
 
-/* Structural elements using display: contents to allow children to participate in grid */
 .coffee-cta-header,
 .coffee-cta-content {
     display: contents;
@@ -93,7 +92,7 @@
 /* Desktop Override */
 @media (min-width: 768px) {
     .coffee-cta-section {
-        padding: 6rem var(--layout-margin);
+        padding: 16rem var(--layout-margin);
     }
 
     .coffee-cta-container {
