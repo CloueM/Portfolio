@@ -7,11 +7,13 @@ const CoffeeCTA = () => {
     return (
         <section className="coffee-cta-section">
             <div className="coffee-cta-container">
-                <div className="coffee-cta-image-wrapper">
-                    <img src={catInMug} alt="Cat in a mug decoration" className="coffee-cta-image" />
+                <div className="coffee-cta-header">
+                    <div className="coffee-cta-image-wrapper">
+                        <img src={catInMug} alt="Cat in a mug decoration" className="coffee-cta-image" />
+                    </div>
+                    <h2 className="coffee-cta-title">Fur Real Though, Coffee's on Me</h2>
                 </div>
                 <div className="coffee-cta-content">
-                    <h2 className="coffee-cta-title">Fur Real Though, Coffee's on Me</h2>
                     <p className="coffee-cta-description">
                         Thanks for making it this far! There is more to explore so don't stop here.
                         Check out all my projects, get to know me on the about page, and if a coffee chat
