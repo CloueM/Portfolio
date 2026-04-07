@@ -4,6 +4,7 @@ import Logo from '../assets/favicon.svg';
 import { Link } from 'react-router-dom';
 import ProjectItem from './ProjectItem';
 import { projectsData } from '../data/projects';
+import CoffeeCTA from './CoffeeCTA';
 
 const Projects = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -49,6 +50,8 @@ const Projects = () => {
                     <ProjectItem key={project.id} project={project} />
                 ))}
             </div>
+
+            <CoffeeCTA />
         </div>
     );
 };
