@@ -92,8 +92,33 @@
     }
 }
 
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .copyright {
     margin: 0;
+}
+
+.music-credit {
+    margin: 0;
+    font-size: 0.65rem;
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.music-credit a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.music-credit a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .footer-tagline {

@@ -28,9 +28,14 @@ const Footer = () => {
                     </nav>
                 </div>
                 <div className="footer-bottom">
-                    <p className="copyright">
-                        © {currentYear} CLOUE MAC. ALL RIGHTS RESERVED.
-                    </p>
+                    <div className="footer-info">
+                        <p className="copyright">
+                            © {currentYear} CLOUE MAC. ALL RIGHTS RESERVED.
+                        </p>
+                        <p className="music-credit">
+                            MUSIC: <a href="https://www.youtube.com/watch?v=laZusNy8QiY" target="_blank" rel="noopener noreferrer">HAGGSTROM BY C418</a>
+                        </p>
+                    </div>
                     <div className="footer-tagline">
                         THANK YOU FOR VISITING
                     </div>

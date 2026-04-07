@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Footer from './components/Footer'
 import ScrollCTA from './components/ScrollCTA'
+import SoundControl from './components/SoundControl'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
+      <SoundControl />
       <ScrollCTA />
     </>
   )

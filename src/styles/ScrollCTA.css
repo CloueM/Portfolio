@@ -1,7 +1,12 @@
-.scroll-cta-btn {
+/* Scroll CTA positioned independently on the bottom right */
+.scroll-cta-container {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  z-index: 1000;
+}
+
+.scroll-cta-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +18,8 @@
   font-family: var(--font-primary);
   font-size: 14px;
   cursor: pointer;
-  z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .scroll-cta-btn.scrolled {
@@ -25,7 +29,11 @@
 
 .scroll-cta-btn:hover {
   background-color: #f0f0f0;
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+}
+
+.scroll-cta-btn.scrolled:hover {
+  background-color: var(--color-stone);
 }
 
 .scroll-cta-text {
@@ -33,9 +41,12 @@
 }
 
 @media (max-width: 768px) {
-  .scroll-cta-btn {
+  .scroll-cta-container {
     bottom: 20px;
     right: 20px;
+  }
+
+  .scroll-cta-btn {
     padding: 10px 20px;
     font-size: 12px;
   }
