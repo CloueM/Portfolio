@@ -25,7 +25,7 @@ const FeaturedProjects = () => {
     };
 
     return (
-        <section className="featured-projects-section">
+        <section id="featured-projects" className="featured-projects-section">
             <div className="featured-header">
                 <h2 className="featured-title">Featured Projects</h2>
                 <Link to="/projects" className="view-all-btn">
