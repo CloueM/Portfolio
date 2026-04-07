@@ -3,6 +3,7 @@ import '../styles/Hero.css';
 import Logo from '../assets/favicon.svg';
 import { Link } from 'react-router-dom';
 import AboutMe from './AboutMe';
+import FAQ from './FAQ';
 
 const About = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -49,6 +50,7 @@ const About = () => {
             </section>
 
             <AboutMe />
+            <FAQ />
         </div>
     );
 };
