@@ -52,13 +52,9 @@ const FeaturedProjects = () => {
                             <img src={project.image} alt={project.title} className="project-image" />
                         </div>
 
-                        <div className="project-title-layer">
-                            <h3 className="project-title">{project.title}</h3>
-                        </div>
-
                         <div className="project-overlay">
                             <div className="overlay-content">
-                                <h3 className="overlay-title">{project.title}</h3>
+                                <h3 className="project-overlay-title">{project.title}</h3>
                                 <p className="overlay-description">{project.description}</p>
                                 <a
                                     href={project.liveLink}
