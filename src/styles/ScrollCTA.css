@@ -1,4 +1,3 @@
-/* Scroll CTA positioned independently on the bottom right */
 .scroll-cta-container {
   position: fixed;
   bottom: 30px;

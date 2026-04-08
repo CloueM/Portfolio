@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import ScrollCTA from './components/ScrollCTA'
 import SoundControl from './components/SoundControl'
 import SplashScreen from './components/SplashScreen'
+import SmoothFollower from './components/SmoothFollower'
 import './App.css'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Footer />
           <SoundControl />
           <ScrollCTA />
+          <SmoothFollower />
         </>
       )}
     </>

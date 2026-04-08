@@ -1,4 +1,3 @@
-/* Sound control positioned independently */
 .sound-control-container {
   position: fixed;
   bottom: 30px;
