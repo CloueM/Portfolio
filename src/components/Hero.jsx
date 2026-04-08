@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import Logo from '../assets/favicon.svg';
 import { Link } from 'react-router-dom';
+import { playHoverSound, playSelectSound } from '../utils/sound';
 
 const Hero = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -38,9 +39,9 @@ const Hero = () => {
                 <div className={`hero-nav-wrapper ${isScrolled ? 'fixed-nav' : ''}`}>
                     <nav className="site-nav">
                         <div className="nav-pill"> 
-                            <Link to="/" className="nav-link active">Home</Link>
-                            <Link to="/projects" className="nav-link">Projects</Link>
-                            <Link to="/about" className="nav-link">About</Link>
+                            <Link to="/" className="nav-link active" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>Home</Link>
+                            <Link to="/projects" className="nav-link" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>Projects</Link>
+                            <Link to="/about" className="nav-link" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>About</Link>
                         </div>
                     </nav>
                 </div>

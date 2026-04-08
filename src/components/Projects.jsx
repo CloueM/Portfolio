@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import ProjectItem from './ProjectItem';
 import { projectsData } from '../data/projects';
 import CoffeeCTA from './CoffeeCTA';
+import { playHoverSound, playSelectSound } from '../utils/sound';
 
 const Projects = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +36,9 @@ const Projects = () => {
                     <div className={`projects-nav-wrapper ${isScrolled ? 'fixed-nav' : ''}`}>
                         <nav className="site-nav">
                             <div className="nav-pill">
-                                <Link to="/" className="nav-link">Home</Link>
-                                <Link to="/projects" className="nav-link active">Projects</Link>
-                                <Link to="/about" className="nav-link">About</Link>
+                                <Link to="/" className="nav-link" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>Home</Link>
+                                <Link to="/projects" className="nav-link active" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>Projects</Link>
+                                <Link to="/about" className="nav-link" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>About</Link>
                             </div>
                         </nav>
                     </div>

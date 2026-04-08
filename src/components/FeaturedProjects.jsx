@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/FeaturedProjects.css';
 import { projectsData } from '../data/projects';
+import { playHoverSound, playSelectSound, playProjectsHoverSound } from '../utils/sound';
 
 const FeaturedProjects = () => {
     // Only display featured projects here
@@ -14,6 +15,7 @@ const FeaturedProjects = () => {
             setActiveId(null);
         } else {
             setActiveId(id);
+            playProjectsHoverSound();
         }
     };
 
@@ -28,7 +30,7 @@ const FeaturedProjects = () => {
         <section id="featured-projects" className="featured-projects-section">
             <div className="featured-header">
                 <h2 className="featured-title">Featured Projects</h2>
-                <Link to="/projects" className="view-all-btn">
+                <Link to="/projects" className="view-all-btn" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>
                     View All Projects
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -44,6 +46,7 @@ const FeaturedProjects = () => {
                         className={`project-card ${activeId === project.id ? 'active' : ''}`}
                         onClick={() => handleCardClick(project.id)}
                         onKeyDown={(e) => handleCardKeyDown(e, project.id)}
+                        onMouseEnter={playProjectsHoverSound}
                         role="button"
                         tabIndex={0}
                         aria-label={`View details for ${project.title}`}

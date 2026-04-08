@@ -4,6 +4,7 @@ import Logo from '../assets/favicon.svg';
 import { Link } from 'react-router-dom';
 import AboutMe from './AboutMe';
 import FAQ from './FAQ';
+import { playHoverSound, playSelectSound } from '../utils/sound';
 
 const About = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -40,9 +41,9 @@ const About = () => {
                     <div className={`hero-nav-wrapper ${isScrolled ? 'fixed-nav' : ''}`}>
                         <nav className="site-nav">
                             <div className="nav-pill">
-                                <Link to="/" className="nav-link">Home</Link>
-                                <Link to="/projects" className="nav-link">Projects</Link>
-                                <Link to="/about" className="nav-link active">About</Link>
+                                <Link to="/" className="nav-link" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>Home</Link>
+                                <Link to="/projects" className="nav-link" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>Projects</Link>
+                                <Link to="/about" className="nav-link active" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>About</Link>
                             </div>
                         </nav>
                     </div>
