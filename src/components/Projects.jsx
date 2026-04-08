@@ -26,7 +26,9 @@ const Projects = () => {
             <section id="projects" className="projects-section">
                 <div className="projects-container">
                     <div className={`projects-logo-wrapper ${isScrolled ? 'fixed-logo' : ''}`}>
-                        <img src={Logo} alt="Logo" className="logo" />
+                        <a href="/" onClick={(e) => { e.preventDefault(); window.location.href = '/'; }}>
+                            <img src={Logo} alt="Logo" className="logo" />
+                        </a>
                     </div>
 
                     <div className="projects-content">
