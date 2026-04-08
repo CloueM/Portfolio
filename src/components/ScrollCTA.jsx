@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/ScrollCTA.css';
+import { playHoverSound, playSelectSound } from '../utils/sound';
 
 function ScrollCTA() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,7 +43,7 @@ function ScrollCTA() {
 
   return (
     <div className="scroll-cta-container">
-      <button className={scrollButtonClass} onClick={handleClickScroll} aria-label={isScrolled ? "Scroll to top" : "Scroll down"}>
+      <button className={scrollButtonClass} onClick={handleClickScroll} onMouseEnter={playHoverSound} onMouseDown={playSelectSound} aria-label={isScrolled ? "Scroll to top" : "Scroll down"}>
         {isScrolled === false ? (
           <>
             <span className="scroll-cta-text">SCROLL DOWN</span>
