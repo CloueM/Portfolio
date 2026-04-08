@@ -43,6 +43,7 @@ export const stackCategories = {
         stacksData['Github'],
         stacksData['Git'],
         stacksData['Linux'],
+        stacksData['Trello'],
     ],
     Design: [
         stacksData['Figma'],
@@ -51,12 +52,19 @@ export const stackCategories = {
         stacksData['Adobe Photoshop'],
         stacksData['Canva'],
     ],
+    Tools: [
+        stacksData['Github'],
+        stacksData['Git'],
+        stacksData['Linux'],
+        stacksData['Trello'],
+        stacksData['Vite'],
+    ],
     Learning: [
+        stacksData['React'],
         stacksData['Python'],
         stacksData['AWS'],
         stacksData['Azure'],
-        stacksData['Trello'],
     ],
 };
 
-export const categoryLabels = ['All', 'Development', 'Design', 'Learning'];
+export const categoryLabels = ['All', 'Development', 'Design', 'Tools', 'Learning'];
