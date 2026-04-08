@@ -1,6 +1,6 @@
 .coffee-cta-section {
     width: 100%;
-    padding: 3rem var(--layout-margin);
+    padding: 8rem var(--layout-margin);
     background-color: var(--color-dust);
     box-sizing: border-box;
 }
