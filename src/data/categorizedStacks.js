@@ -64,6 +64,7 @@ export const stackCategories = {
         stacksData['Python'],
         stacksData['AWS'],
         stacksData['Azure'],
+        stacksData['Shopify']
     ],
 };
 

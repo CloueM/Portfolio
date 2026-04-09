@@ -186,6 +186,7 @@
   line-height: 1.7;
   opacity: 0.9;
   margin: 0;
+  white-space: pre-wrap;
 }
 
 /* Tech Stacks */
