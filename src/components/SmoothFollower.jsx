@@ -13,7 +13,7 @@ export default function SmoothFollower() {
   });
   const [isHovering, setIsHovering] = useState(false);
   
-  const DOT_SMOOTHNESS = 0.2;
+  const DOT_SMOOTHNESS = 1.0;
   const BORDER_DOT_SMOOTHNESS = 0.1;
 
   useEffect(() => {
