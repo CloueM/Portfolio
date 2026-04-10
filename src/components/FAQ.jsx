@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import faqItems from '../data/faq.js';
-
+import { playHoverSound, playSelectSound } from '../utils/sound';
 import '../styles/FAQ.css';
 
 const FAQ = () => {
@@ -29,7 +29,8 @@ const FAQ = () => {
                                 >
                                     <button
                                         className="faq-question"
-                                        onClick={() => toggle(item.id)}
+                                        onClick={() => { playSelectSound(); toggle(item.id); }}
+                                        onMouseEnter={playHoverSound}
                                         aria-expanded={isOpen}
                                     >
                                         <span className="faq-question-text">{item.question}</span>

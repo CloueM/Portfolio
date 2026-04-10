@@ -12,13 +12,11 @@ const CoffeeCTA = () => {
                     <div className="coffee-cta-image-wrapper">
                         <img src={catInMug} alt="Cat in a mug decoration" className="coffee-cta-image" />
                     </div>
-                    <h2 className="coffee-cta-title">Fur Real Though, Coffee's on Me</h2>
+                    <h2 className="coffee-cta-title">Thanks for Stopping By</h2>
                 </div>
                 <div className="coffee-cta-content">
                     <p className="coffee-cta-description">
-                        Thanks for making it this far! There is more to explore so don't stop here.
-                        Check out all my projects, get to know me on the about page, and if a coffee chat
-                        sounds good to you, you know where to find me.
+                        I appreciate you taking the time to view my portfolio. There is more to see in my projects section and about page. If you have any questions or want to connect, my inbox is always open.
                     </p>
                     <Link to="/about" className="coffee-cta-btn" onMouseEnter={playHoverSound} onMouseDown={playSelectSound}>
                         ABOUT PAGE
