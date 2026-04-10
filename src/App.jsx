@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+      <SmoothFollower />
       {!hasStarted ? (
         <SplashScreen onStart={() => setHasStarted(true)} />
       ) : (
@@ -27,7 +28,6 @@ function App() {
           <Footer />
           <SoundControl />
           <ScrollCTA />
-          <SmoothFollower />
         </>
       )}
     </>

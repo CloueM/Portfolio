@@ -26,6 +26,7 @@ export const stackCategories = {
         stacksData['Python'],
         stacksData['AWS'],
         stacksData['Git'],
+        stacksData['Postman']
     ],
     Development: [
         stacksData['React'],
@@ -43,14 +44,15 @@ export const stackCategories = {
         stacksData['Github'],
         stacksData['Git'],
         stacksData['Linux'],
-        stacksData['Trello'],
+        stacksData['Trello']
     ],
     Design: [
         stacksData['Figma'],
         stacksData['Adobe XD'],
         stacksData['Adobe Illustrator'],
         stacksData['Adobe Photoshop'],
-        stacksData['Canva'],
+        stacksData['Lightroom'],
+        stacksData['Canva']
     ],
     Tools: [
         stacksData['Github'],
@@ -58,13 +60,15 @@ export const stackCategories = {
         stacksData['Linux'],
         stacksData['Trello'],
         stacksData['Vite'],
+        stacksData['Postman']
     ],
     Learning: [
         stacksData['React'],
         stacksData['Python'],
         stacksData['AWS'],
         stacksData['Azure'],
-        stacksData['Shopify']
+        stacksData['Shopify'],
+        stacksData['Firebase']
     ],
 };
 

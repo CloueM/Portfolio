@@ -12,11 +12,21 @@ export default function SmoothFollower() {
     border: { x: 0, y: 0 },
   });
   const [isHovering, setIsHovering] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   
-  const DOT_SMOOTHNESS = 1.0;
+  const DOT_SMOOTHNESS = 0.5;
   const BORDER_DOT_SMOOTHNESS = 0.1;
 
   useEffect(() => {
+    const handleResize = () => setIsMobile(window.matchMedia('(max-width: 768px)').matches);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
     // Inject global cursor hiding
     const style = document.createElement('style');
     style.innerHTML = `* { cursor: none !important; }`;
@@ -86,18 +96,18 @@ export default function SmoothFollower() {
       cancelAnimationFrame(animationId);
       document.head.removeChild(style);
     };
-  }, []);
+  }, [isMobile]);
 
-  if (typeof window === 'undefined') return null;
+  if (typeof window === 'undefined' || isMobile) return null;
 
   return (
-    <div style={{ pointerEvents: 'none', position: 'fixed', inset: 0, zIndex: 9999 }}>
+    <div style={{ pointerEvents: 'none', position: 'fixed', inset: 0, zIndex: 10000 }}>
       {/* Dot */}
       <div
         style={{
           position: 'absolute',
           borderRadius: '50%',
-          backgroundColor: '#F7F5F2', /* off-white */
+          backgroundColor: '#F7F5F2',
           width: '8px',
           height: '8px',
           transform: 'translate(-50%, -50%)',
@@ -111,7 +121,7 @@ export default function SmoothFollower() {
         style={{
           position: 'absolute',
           borderRadius: '50%',
-          border: '1.5px solid #1E1E1E', /* charcoal */
+          border: '2px solid #1E1E1E',
           boxShadow: '0 0 10px 3px rgba(220, 214, 204, 0.6), 0 0 20px 6px rgba(220, 214, 204, 0.3)', /* dust glow */
           width: isHovering ? '44px' : '28px',
           height: isHovering ? '44px' : '28px',

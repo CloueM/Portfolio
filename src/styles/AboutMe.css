@@ -94,7 +94,8 @@
 }
 
 .stacks-nav-btn:hover {
-    color: var(--color-charcoal);
+    color: var(--color-off-white);
+    background-color: var(--color-neutral);
 }
 
 .stacks-nav-btn.active {
@@ -160,7 +161,7 @@
     font-weight: var(--font-weight-h3);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--color-stone);
+    color: var(--color-off-white);
     opacity: 0.6;
     margin: 0;
 }
@@ -176,13 +177,13 @@
     flex-direction: column;
     align-items: center;
     gap: 0.35rem;
-    color: var(--color-stone);
+    color: var(--color-dust);
     text-decoration: none;
     transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .social-link:hover {
-    color: var(--color-off-white);
+    color: var(--color-stone);
     transform: translateY(-3px);
 }
 
