@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     title: 'Portfolio',
-    image: 'src/assets/images/portfolio.png',
+    image: '/images/portfolio.png',
     liveLink: 'https://clouemac.com/',
     githubLink: 'https://github.com/CloueM/Portfolio',
     stacks: ['React', 'CSS', 'Github', 'Vite', 'Figma', 'Canva'],
@@ -14,7 +14,7 @@ export const projectsData = [
   {
     id: 2,
     title: 'Cloudy Toy Co',
-    image: 'src/assets/images/cloudytoy.png',
+    image: '/images/cloudytoy.png',
     liveLink: 'https://cloudytoy.bcitwebdeveloper.ca/',
     stacks: ['Wordpress', 'WooCommerce', 'Trello', 'CSS', 'Figma'],
     description: 'Cloudy Toy Co is a fully functional toy store website built by a team of four using WordPress and WooCommerce. Customers can browse and buy toys, with a real payment system, a mailing system, and BC tax rates calculated automatically. The site is fully responsive and works across all devices. The whole process started from a Content Inventory and Sitemap, then Wireframes and a Hi-Fi Mockup for one page, before building the full site.',
@@ -25,7 +25,7 @@ export const projectsData = [
   {
     id: 3,
     title: 'School Site (Demo)',
-    image: 'src/assets/images/schoolsite.png',
+    image: '/images/schoolsite.png',
     liveLink: 'https://clouemac.com/school-site/',
     githubLink: 'https://github.com/CloueM/School-Site-Theme',
     stacks: ['Wordpress', 'CSS', 'PHP', 'Trello'],
@@ -37,7 +37,7 @@ export const projectsData = [
   {
     id: 4,
     title: 'LUMIX',
-    image: 'src/assets/images/lumix.png',
+    image: '/images/lumix.png',
     liveLink: 'https://clouemac.com/lumix/',
     githubLink: 'https://github.com/CloueM/Lumix',
     stacks: ['React', 'CSS', 'JavaScript', 'Adobe Photoshop', 'Github', 'Vite', 'Canva'],
@@ -49,7 +49,7 @@ export const projectsData = [
   {
     id: 5,
     title: 'APX AUTO WORKSHOP (Demo)',
-    image: 'src/assets/images/apxautoworkshop.png',
+    image: '/images/apxautoworkshop.png',
     liveLink: 'https://apexautoworks.myshopify.com/',
     stacks: ['Shopify'],
     description: 'A demo e-commerce website for an auto workshop built using Shopify. Done as a solo project, it covered the basics of setting up a Shopify store, including adding products, creating collections, using apps and plugins, and setting up a payment method.',
@@ -60,7 +60,7 @@ export const projectsData = [
   {
     id: 6,
     title: 'Mindset (Demo)',
-    image: 'src/assets/images/mindset.png',
+    image: '/images/mindset.png',
     liveLink: 'https://clouemac.com/Mindset/index.html',
     stacks: ['Wordpress', 'CSS', 'PHP'],
     description: 'Mindset is a WordPress project that served as my starting point for learning how to build and customize websites in WordPress. Throughout the project, I worked on creating and modifying blocks, setting up plugins, building custom post types, custom taxonomies, and custom fields, following along with each topic covered in class.',
@@ -71,7 +71,7 @@ export const projectsData = [
   {
     id: 7,
     title: 'Matcha Moji',
-    image: 'src/assets/images/matchamoji.png',
+    image: '/images/matchamoji.png',
     liveLink: 'https://clouemac.com/matchamoji/',
     githubLink: 'https://github.com/CloueM/MatchaMoji-Memory-Game.git',
     stacks: ['HTML', 'SASS', 'JavaScript'],
@@ -83,7 +83,7 @@ export const projectsData = [
   {
     id: 8,
     title: 'Alto Pharmacy (Demo)',
-    image: 'src/assets/images/altopharmacy.png',
+    image: '/images/altopharmacy.png',
     githubLink: 'https://github.com/CloueM/G4-Project-2',
     stacks: ['HTML', 'CSS', 'JavaScript', 'Github', 'Trello'],
     description: 'A team project where we rebuilt the front page of Alto Pharmacy\'s real website using HTML, CSS, and JavaScript. The goal was to match the look and feel of the original site as closely as possible. Tasks were split across four team members, with GitHub used for version control and Trello used to keep the work organized.',
@@ -94,7 +94,7 @@ export const projectsData = [
   {
     id: 9,
     title: 'Discover Philippines (Demo)',
-    image: 'src/assets/images/discoverphilippines.png',
+    image: '/images/discoverphilippines.png',
     liveLink: 'https://clouemac.com/discoverphilippines/index.html',
     githubLink: 'https://github.com/CloueM/Discover-Philippines',
     stacks: ['HTML', 'CSS', 'JavaScript', 'Adobe Illustrator', 'Figma'],
