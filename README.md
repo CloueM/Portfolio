@@ -1,16 +1,45 @@
-# React + Vite
+# Cloue Macadangdang | Front-End Web Developer & Designer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="src/assets/favicon.svg" alt="Cloue Macadangdang Logo" width="120" />
+</p>
 
-Currently, two official plugins are available:
+## 🚀 Welcome to my Portfolio!
+Hi! I'm **Cloue Macadangdang**, a Front-End Web Developer and Designer specialized in building modern, and interactive web applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🔗 Connect with Me
+- **Portfolio Website:** [clouemac.com](https://clouemac.com/)
+- **LinkedIn:** [Cloue Macadangdang](https://www.linkedin.com/in/cloue-macadangdang)
+- **Email:** [contact@clouemac.com](mailto:contact@clouemac.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Development
+- **Core:** JavaScript (ES6+), React, HTML5, CSS3, SASS
+- **Backend/Tools:** Node.js, MySQL, Firebase, Git, GitHub
+- **E-commerce:** WordPress, Shopify, WooCommerce
+
+### Design
+- **UI/UX:** Figma, Adobe XD
+- **Creative:** Adobe Illustrator, Adobe Photoshop, Canva
+
+### Infrastructure & Cloud
+- **Platforms:** AWS, Azure, Linux
+
+---
+
+## 📂 Project Structure
+- `src/components/`: Modular React components.
+- `src/styles/`: Vanilla CSS and component-specific styles.
+- `src/data/`: Static data for projects, stacks, and FAQs.
+- `public/`: Public assets and SEO metadata.
+
+---
+
+<p align="center">
+  Thank you for visiting my github portfolio! - Cloue Macadangdang
+</p>
