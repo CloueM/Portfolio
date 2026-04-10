@@ -29,12 +29,15 @@ const Hero = () => {
                 </div>
 
                 <div className="hero-content">
+                    {/* Hidden H1 for SEO optimization */}
+                    <h1 className="sr-only">Cloue Macadangdang | Front End Web Developer & Designer Portfolio</h1>
+                    
                     <div className="hero-left">
-                        <h1 className="hero-web">WEB</h1>
+                        <div className="hero-web">WEB</div>
                     </div>
                     <div className="hero-right">
-                        <h1 className="hero-designer">DESIGNER</h1>
-                        <h1 className="hero-developer">DEVELOPER</h1>
+                        <div className="hero-designer">DESIGNER</div>
+                        <div className="hero-developer">DEVELOPER</div>
                     </div>
                 </div>
 
