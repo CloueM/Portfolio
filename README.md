@@ -4,19 +4,19 @@
   <img src="src/assets/favicon.svg" alt="Cloue Macadangdang Logo" width="120" />
 </p>
 
-## 🚀 Welcome to my Portfolio!
+## Welcome to my Portfolio!
 Hi! I'm **Cloue Macadangdang**, a Front-End Web Developer and Designer specialized in building modern, and interactive web applications.
 
 ---
 
-## 🔗 Connect with Me
+## Connect with Me
 - **Portfolio Website:** [clouemac.com](https://clouemac.com/)
 - **LinkedIn:** [Cloue Macadangdang](https://www.linkedin.com/in/cloue-macadangdang)
 - **Email:** [contact@clouemac.com](mailto:contact@clouemac.com)
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Development
 - **Core:** JavaScript (ES6+), React, HTML5, CSS3, SASS
@@ -32,7 +32,7 @@ Hi! I'm **Cloue Macadangdang**, a Front-End Web Developer and Designer specializ
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 - `src/components/`: Modular React components.
 - `src/styles/`: Vanilla CSS and component-specific styles.
 - `src/data/`: Static data for projects, stacks, and FAQs.
