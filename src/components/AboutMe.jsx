@@ -95,7 +95,7 @@ const AboutMe = () => {
                                 <span className="social-label">LinkedIn</span>
                             </a>
                             <a
-                                href="mailto:senp41.mac@gmail.com"
+                                href="mailto:contact@clouemac.com"
                                 className="social-link"
                                 aria-label="Email"
                                 onMouseEnter={playHoverSound}
