@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <div className="footer-info">
                         <p className="copyright">
-                            © {currentYear} CLOUE MAC. ALL RIGHTS RESERVED.
+                            © {currentYear} CLOUE MACADANGDANG
                         </p>
                         <p className="music-credit">
                             MUSIC: <a href="https://www.youtube.com/watch?v=laZusNy8QiY" target="_blank" rel="noopener noreferrer">HAGGSTROM BY C418</a>
