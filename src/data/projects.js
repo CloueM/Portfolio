@@ -44,5 +44,17 @@ export const projectsData = [
     description: 'LUMIX is a movie browsing website built with React that pulls live data from the TMDB API. Users can browse films by category (Now Playing, Popular, Top Rated, and Upcoming), view trailers, check movie details, and save their favorites to watch later.',
     reflection: 'This project pushed me into new territory. Working with a third-party API for the first time was exciting, and seeing real movie data show up on the screen made everything click. I still feel like I need more time with React to get fully comfortable, but this project gave me a real starting point. I also used Reddit, Stack Overflow, and some AI tools along the way to get through the parts I was stuck on, which taught me how to look for help without just copying answers.\n\nI got a bit too ambitious with my design. My Photoshop wireframe looked great, but when it came time to build it, some parts did not translate well, especially the category navigation bar on smaller screens. I had to rethink parts of the design during development and find solutions that still felt good to use. It was a good reminder that a design needs to be thought through for all screen sizes before the build starts.\n\nThe biggest thing I took away from this project is that plans always change during development, and knowing how to adapt is just as important as planning well. I also learned to spend more time in the design phase thinking through how each part will actually work before writing any code.',
     isFeatured: true
+  },
+
+  {
+    id: 5,
+    title: 'Matcha Moji',
+    image: '/images/matchamoji.png',
+    liveLink: 'https://kurowii.com/matchamoji/',
+    githubLink: 'https://github.com/CloueM/MatchaMoji-Memory-Game.git',
+    stacks: ['HTML', 'SASS', 'JavaScript'],
+    description: 'Matcha Moji is a card-matching memory game built with pure JavaScript. Players choose a difficulty level (Easy, Medium, Hard, or WTH), each with a different countdown timer, then flip cards to find matching emoji pairs before time runs out. The final score is calculated using accuracy (60%), time remaining (40%), and a difficulty multiplier ranging from 1.2x on Easy up to 3x on WTH.',
+    reflection: 'Building this game was one of my harder challenges. HTML and CSS were fine, but JavaScript was where I struggled, not with understanding it, but with getting the logic right and figuring out the correct way to write things. There are many ways to build a card game, and working through that pushed me to keep doing logic-heavy projects so I can get more comfortable with JavaScript over time.\n\nOne thing I did wrong was not thinking about mobile from the start. I built the full desktop layout first, then realized later that it looked off on phones. Going backwards from desktop to mobile was a lot harder than starting with mobile first would have been. That was a lesson I will not forget for future projects.\n\nAdding the scoring system after the fact, once I learned about localStorage, was a good experience. It showed me how to go back into a finished project and add something new without breaking what was already there.',
+    isFeatured: true
   }
 ];
