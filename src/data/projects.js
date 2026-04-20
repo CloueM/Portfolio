@@ -24,18 +24,6 @@ export const projectsData = [
 
   {
     id: 3,
-    title: 'School Site (Demo)',
-    image: '/images/schoolsite.png',
-    liveLink: 'https://kurowii.com/school-site/',
-    githubLink: 'https://github.com/CloueM/School-Site-Theme',
-    stacks: ['Wordpress', 'CSS', 'PHP', 'Trello'],
-    description: 'A school website for a fictional school, Rabbi Institute of Technology, built with a partner using WordPress. The project covered the basics of building a site in WordPress, including setting up custom blocks, taxonomies, plugins, and custom post types for features like student testimonials and news posts. Since this was a class assignment, we had to meet specific project requirements and hit tight deadlines.',
-    reflection: 'This project was challenging but fun. It was my first time working with a partner in WordPress, and it was good practice for learning how to stay organized and on the same page as someone else. We used Trello to keep track of our tasks and Discord to communicate. My partner and I kept things professional and treated it like a real work environment, which made the whole experience feel more meaningful.\n\nThe biggest challenge was getting used to the WordPress workflow and understanding what belongs on the front end versus the back end. We also had to figure out when to use a plugin versus when to build something custom with post types, blocks, or taxonomies. Making those decisions correctly took some trial and error, but it helped me understand WordPress at a deeper level.\n\nBy the end of the project, I felt much more confident working in WordPress. I also got better at collaborating with someone and avoiding the merge conflicts that came up in earlier team projects.',
-    isFeatured: false
-  },
-
-  {
-    id: 4,
     title: 'LUMIX',
     image: '/images/lumix.png',
     liveLink: 'https://kurowii.com/lumix/',
@@ -47,7 +35,7 @@ export const projectsData = [
   },
 
   {
-    id: 5,
+    id: 4,
     title: 'Matcha Moji',
     image: '/images/matchamoji.png',
     liveLink: 'https://kurowii.com/matchamoji/',
