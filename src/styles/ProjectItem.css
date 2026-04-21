@@ -24,7 +24,8 @@
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
-.image-wrapper, .project-main-image {
+.image-wrapper,
+.project-main-image {
   height: 100%;
   width: 100%;
 }
@@ -44,6 +45,7 @@
   inset: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, transparent 80%);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -54,6 +56,7 @@
 .project-image-column:hover .image-overlay {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 25%, transparent 60%);
   backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
 }
 
 .project-overlay-title {
@@ -75,8 +78,9 @@
 }
 
 .action-btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: var(--color-off-white);
   padding: 0.8rem 1.6rem;
   border-radius: 100px;
@@ -131,7 +135,9 @@
 }
 
 .tab-btn {
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: var(--color-neutral);
   padding: 0.6rem 1.4rem;
   border-radius: 100px;
@@ -218,14 +224,35 @@
 
 /* Responsive */
 @media (max-width: 992px) {
-  .project-item-container { grid-template-columns: 1fr; }
-  .project-image-column { height: 380px; }
-  .project-details-column { max-height: 380px; }
-  .project-overlay-title { font-size: clamp(1.1rem, 4vw, 1.8rem); }
+  .project-item-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image-column {
+    height: 380px;
+  }
+
+  .project-details-column {
+    max-height: 380px;
+  }
+
+  .project-overlay-title {
+    font-size: clamp(1.1rem, 4vw, 1.8rem);
+  }
 }
 
 @media (max-width: 600px) {
-  .project-item { padding: 3rem var(--layout-margin); }
-  .project-image-column { height: 280px; }
-  .project-details-column { max-height: 380px; } /* Increased from 280px for better text readability */
+  .project-item {
+    padding: 3rem var(--layout-margin);
+  }
+
+  .project-image-column {
+    height: 280px;
+  }
+
+  .project-details-column {
+    max-height: 380px;
+  }
+
+  /* Increased from 280px for better text readability */
 }
